@@ -24,15 +24,15 @@ $(document).ready ( function() {
     var losses = 0;
     $('#losses').text(losses);
     
-    var targetNumber = Math.floor(Math.random() * 120);
+    var targetNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
     $('#target-number').text(targetNumber);
 
 
     var totalCounter = 0;
-    var garnet = Math.floor((Math.random() * 10)+1);
-    var pearl = Math.floor((Math.random() * 10)+1);
-    var amethyst = Math.floor((Math.random() * 10)+1);
-    var roseQuartz = Math.floor((Math.random() * 10)+1);
+    var garnet = Math.floor((Math.random() * 12)+1);
+    var pearl = Math.floor((Math.random() * 12)+1);
+    var amethyst = Math.floor((Math.random() * 12)+1);
+    var roseQuartz = Math.floor((Math.random() * 12)+1);
 
     $('#garnet').click(function () {
         totalCounter += garnet;

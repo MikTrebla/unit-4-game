@@ -5,7 +5,6 @@ img {
     width : 25%;
     float : left;
     height : 75%;
-    border : solid 1px;
 }
 
 h1, #score-row{
@@ -15,7 +14,7 @@ h1, #score-row{
     color : orchid;
 }
 
-#rainbow, #score-row {
+#rainbow {
     /* Chrome, Safari, Opera */
   -webkit-animation: rainbow 3s infinite; 
   
@@ -54,6 +53,12 @@ h1, #score-row{
     
 #score-row div {
     text-align : center;
-    border : solid 1px black;
-    padding : 50px 0px;
+    /* border : solid 1px black; */
+    /* padding : 50px 0px; */
+    
+}
+
+.card {
+    background: transparent;
+    border : none;
 }
