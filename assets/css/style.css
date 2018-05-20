@@ -1,0 +1,57 @@
+body {
+    background : url('https://az616578.vo.msecnd.net/files/2017/02/19/636230699227668026-784658607_SteveyStev.jpg');
+}
+img {
+    width : 25%;
+    float : left;
+    height : 75%;
+}
+
+h1, #score-row{
+    text-align : center;
+    font-size : 50px;
+    font-weight : bold;
+    color : orchid;
+}
+
+#rainbow, #score-row {
+    /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 3s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: rgb(221, 180, 165);}
+	40%{color: lemonchiffon;}
+	60%{color: palegreen;}
+	80%{color: paleturquoise;}
+	100%{color: orchid;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: rgb(221, 180, 165);}
+	40%{color: lemonchiffon;}
+	60%{color: palegreen;}
+	80%{color: paleturquoise;}
+	100%{color: orchid;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	5%{color: rgb(221, 180, 165);}
+	35%{color: lemonchiffon;}
+	65%{color: palegreen;}
+	85%{color: paleturquoise;}
+	0%{color: orchid;}	
+} 
+    
+#score-row div {
+    text-align : center;
+    border : solid 4px dodgerblue;
+}
