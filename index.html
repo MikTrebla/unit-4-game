@@ -4,51 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal Game!</title>
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-    </script>
 
-    
-
-    
+  
 
 </head>
+
+
+
 <body>
 <div class = 'row' id = 'heading'>
     <div class = 'col-md-12'>
         <h1 id = 'rainbow'>Crystal Collector</h1>
     </div>
 </div>
-<div class = 'row' id = 'image-row' >
-    <div class = 'col-md-12'>
-        <img src = 'assets/images/garnet.gif' alt = 'garnet' id = 'garnet' />
-        
-        <img src = 'assets/images/pearl.png' alt = 'pearl' id = 'pearl' />
-
-        <img src = 'assets/images/amethyst.png' alt = 'amethyst' id = 'amethyst' />
-
-        <img src = 'assets/images/rosequartz.png' alt = 'rose-quartz' id = 'rosequartz'/>
+<div class = 'row'>
+    <div id = 'imageContainer' class = 'col-md-12'>
+        <img class = 'crystalImage' src = 'assets/images/garnet.gif' alt = 'garnet' id = 'garnet' />
+        <img class = 'crystalImage' src = 'assets/images/pearl.png' alt = 'pearl' id = 'pearl' />
+        <img class = 'crystalImage' src = 'assets/images/amethyst.png' alt = 'amethyst' id = 'amethyst' />
+        <img class = 'crystalImage' src = 'assets/images/rosequartz.png' alt = 'rose-quartz' id = 'rosequartz'/>
     </div>
 </div>
 
 <div class = 'row' id = 'score-row'>
     <div class = 'col-md-4'>
-        <h2 id = 'targetScore'>Your Target Number: </h2>  
+        <h2 id = 'targetScore'>Your Target Number: <span id = 'target-number'></span></h2>  
     </div>
     <div class = 'col-md-4'>
-        <h2 id = 'numberFromImageClick'>Your total: </h2>
+        <h2 id = 'numberFromImageClick'>Your total: <span id = 'crystal-number'></span></h2>
     </div>
     <div class = 'col-md-2'>
-        <h2>Wins: </h2>
+        <h2>Wins: <span id = 'wins'></span></h2>
     </div>
     <div class = 'col-md-2'>
-            <h2>Losses: </h2>
+            <h2>Losses: <span id = 'losses'></span></h2>
         </div>
 </div>
 
