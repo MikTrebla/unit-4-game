@@ -1,21 +1,3 @@
-// var newGameNumbers = function(newGame) {
-//     var garnet = Math.ceil(Math.random() * 20);
-//     var pearl = Math.ceil(Math.random() * 20);
-//     var amethyst = Math.ceil(Math.random() * 20);
-//     var roseQuartz = Math.ceil(Math.random() * 20);
-//     var randomTarget = Math.ceil(Math.random() * 100)
-   
-// }
-// console.log(newGameNumbers)
-
-
-// var increment = numberArray[Math.round(Math.random())];
-
-
-
-
-
-
 $(document).ready ( function() {
 
     var wins = 0;
@@ -24,7 +6,7 @@ $(document).ready ( function() {
     var losses = 0;
     $('#losses').text(losses);
     
-    var targetNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
+    var targetNumber = Math.floor(Math.random() * (120-19+1) + 19);
     $('#target-number').text(targetNumber);
 
 
@@ -54,13 +36,15 @@ $(document).ready ( function() {
     var resetGame = function() {
         totalCounter = 0;
         $('#crystal-number').text(totalCounter);
-        targetNumber = Math.floor(Math.random() * 120);
+        targetNumber = Math.floor(Math.random() * (120-19+1) + 19);
         $('#target-number').text(targetNumber);
-        garnet = Math.ceil(Math.random() * 15);
-        pearl = Math.ceil(Math.random() * 15);
-        amethyst = Math.ceil(Math.random() * 15);
-        roseQuartz = Math.ceil(Math.random() * 15);
+        garnet = Math.floor((Math.random() * 12)+1);
+        pearl = Math.floor((Math.random() * 12)+1); 
+        amethyst = Math.floor((Math.random() * 12)+1);
+        roseQuartz = Math.floor((Math.random() * 12)+1);
+        // console.log('New target number is ' + targetNumber);
     }
+    
 
     $('img').click('.crystalImage', function(event) {
         if (totalCounter === targetNumber) {
@@ -69,12 +53,13 @@ $(document).ready ( function() {
             $('#wins').text(wins);
             resetGame();
 
-        } else if (totalCounter >= targetNumber) {
+        } else if (totalCounter > targetNumber) {
             alert ('you lose');
             losses++;
             $('#losses').text(losses);
             resetGame();
         }
+        // console.log(totalCounter);
     });
    
 });
